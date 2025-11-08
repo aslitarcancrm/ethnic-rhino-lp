@@ -55,7 +55,7 @@ function roleFrom(path: string, displayName: string): string {
 }
 
 export const DoctorsSection: React.FC = () => {
-  const modules = (import.meta as any).glob("@/assets/doctors/*.{png,jpg,jpeg,webp,svg}", {
+  const modules = (import.meta as any).glob("/src/assets/doctors/*.{png,jpg,jpeg,webp,svg}", {
     eager: true,
     as: "url",
   }) as Record<string, string>;

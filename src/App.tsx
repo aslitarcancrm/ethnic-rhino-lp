@@ -15,7 +15,7 @@ import { LifeChangingVideos } from "@/components/LifeChangingVideos";
 import { DoctorsSection } from "@/components/DoctorsSection";
 
 // Attempt to auto-load images from src/assets/hero
-const heroModules = (import.meta as any).glob("@/assets/hero/*.{webp,jpg,jpeg,png}", {
+const heroModules = (import.meta as any).glob("/src/assets/hero/*.{webp,jpg,jpeg,png}", {
   eager: true,
   as: "url",
 }) as Record<string, string>;

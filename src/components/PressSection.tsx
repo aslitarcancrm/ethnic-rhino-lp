@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 
 export const PressSection: React.FC = () => {
-  const modules = (import.meta as any).glob("@/assets/press/*.{png,jpg,jpeg,webp,svg}", {
+  const modules = (import.meta as any).glob("/src/assets/press/*.{png,jpg,jpeg,webp,svg}", {
     eager: true,
     as: "url",
   }) as Record<string, string>;

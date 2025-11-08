@@ -7,7 +7,7 @@ export const HappyPatients: React.FC = () => {
 
   // Auto-load all images dropped into src/assets/patients
   // Supports .jpg, .jpeg, .png, .webp
-  const imported = (import.meta as any).glob("@/assets/patients/*.{jpg,jpeg,png,webp}", {
+  const imported = (import.meta as any).glob("/src/assets/patients/*.{jpg,jpeg,png,webp}", {
     eager: true,
     as: "url",
   }) as Record<string, string>;
