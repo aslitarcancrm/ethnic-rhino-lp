@@ -2,8 +2,9 @@ import * as React from "react"
 import { X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-const Sheet = ({ children }: { children: React.ReactNode }) => {
-  return <>{children}</>
+// Accept optional open/onOpenChange in the type for compatibility, but don't destructure/use them
+const Sheet = (props: { children: React.ReactNode; open?: boolean; onOpenChange?: (open: boolean) => void }) => {
+  return <>{props.children}</>
 }
 
 const SheetTrigger = React.forwardRef<
