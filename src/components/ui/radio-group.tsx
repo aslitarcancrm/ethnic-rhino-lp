@@ -32,7 +32,7 @@ const RadioGroupItem = React.forwardRef<
       type="radio"
       value={value}
       checked={context?.value === value}
-      onChange={() => context?.onValueChange(value)}
+      onChange={() => context?.onValueChange(String(value))}
       className={cn("h-4 w-4 rounded-full border border-primary", className)}
       {...props}
     />
